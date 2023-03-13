@@ -1,0 +1,167 @@
+/* import poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+#root {
+	/* hide cursor */
+	cursor: none;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+body {
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #0e0e0e;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+a {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+}
+a:hover {
+	color: #535bf2;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+button {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: #1a1a1a;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+button:hover {
+	border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+.studentID {
+	font-size: 1.4em;
+	padding: 0.4em;
+	border: none;
+	background-color: #111111;
+	border-radius: 0.2em;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	color: #8b8b8b;
+	margin-right: 0.2em;
+	/* box shadow */
+}
+
+.studentID:focus {
+	outline: none;
+	color: #b4b4b4;
+}
+
+.studentID:hover {
+	color: #b4b4b4;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #213547;
+		background-color: #ffffff;
+	}
+	a:hover {
+		color: #747bff;
+	}
+	button {
+		background-color: #f9f9f9;
+	}
+}
+
+.confirmation {
+	/* position in center of screen */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50em;
+	height: 14em;
+	background-color: rgba(0, 0, 0, 0.1);
+	/* black background */
+	backdrop-filter: blur(40px);
+	color: white;
+	text-align: center;
+	/* align items vertically */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 8px;
+	/* box shadow */
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 11px rgba(0, 0, 0, 0.1);
+}
+
+.darken {
+	/* cover the entire screen */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* darken the background */
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.confirmation .studentInfo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.confirmation h1 {
+	font-size: 2em;
+	line-height: 1.1;
+	color: rgb(218, 218, 218);
+	/* poppins font */
+	font-family: "Poppins", sans-serif;
+}
+
+.confirmation .studentInfo h2 {
+	margin: 0.2em;
+	font-weight: 500;
+	background-color: #1a1a1a;
+	padding: 0.4em 0.8em;
+	border-radius: 0.2em;
+}
+
+/* second h2 of studentInfo */
+.confirmation .studentInfo .freshman {
+	background-color: #451919;
+}
+
+.confirmation .studentInfo .sophomore {
+	background-color: #232d10;
+}
+
+.confirmation .studentInfo .junior {
+	background-color: #102d16;
+}
+
+.confirmation .studentInfo .senior {
+	background-color: #10232d;
+}

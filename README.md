@@ -1,2 +1,0 @@
-# attendance
-Our attendance app!
